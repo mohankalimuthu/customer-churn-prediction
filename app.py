@@ -6,9 +6,10 @@ import os
 app = Flask(__name__)
 
 MODEL_PATHS = {
-    "logistic": "models/logistic_churn_model.pkl",
-    "random_forest": "models/random_forest_churn_model.pkl",
-    "gradient_boosting": "models/GB_churn_model.pkl"
+    "logistic": "models\\GB_churn_model.pkl",
+    "random_forest": "models\\random_forest_churn_model.pkl",
+    "gradient_boosting": "models\\GB_churn_model.pkl"
+
 }
 
 def load_model(model_key):
